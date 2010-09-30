@@ -1,0 +1,7 @@
+require 'bible_reference_parser/metadata/bible_metadata'
+require 'bible_reference_parser/reference/behavior/tracks_errors'
+require 'bible_reference_parser/reference/reference_collection'
+require 'bible_reference_parser/reference/book_reference'
+require 'bible_reference_parser/reference/chapter_reference'
+require 'bible_reference_parser/reference/verse_reference'
+require 'bible_reference_parser/parser'
