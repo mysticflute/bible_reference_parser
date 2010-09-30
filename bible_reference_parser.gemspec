@@ -19,12 +19,31 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     ".rspec",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "bible_reference_parser.gemspec",
      "lib/bible_reference_parser.rb",
-     "spec/spec_helper.rb"
+     "lib/bible_reference_parser/metadata/bible_metadata.rb",
+     "lib/bible_reference_parser/metadata/metadata.yml",
+     "lib/bible_reference_parser/parser.rb",
+     "lib/bible_reference_parser/reference/behavior/tracks_errors.rb",
+     "lib/bible_reference_parser/reference/book_reference.rb",
+     "lib/bible_reference_parser/reference/chapter_reference.rb",
+     "lib/bible_reference_parser/reference/reference_collection.rb",
+     "lib/bible_reference_parser/reference/verse_reference.rb",
+     "spec/bible_metadata_spec.rb",
+     "spec/book_reference_spec.rb",
+     "spec/chapter_reference_spec.rb",
+     "spec/parser_spec.rb",
+     "spec/reference_collection_spec.rb",
+     "spec/shared/it_tracks_errors_shared.rb",
+     "spec/spec_helper.rb",
+     "spec/verse_reference_spec.rb"
   ]
   s.homepage = %q{http://github.com/endium/bible_reference_parser}
   s.rdoc_options = ["--charset=UTF-8"]
