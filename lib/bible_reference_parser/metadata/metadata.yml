@@ -1,0 +1,457 @@
+# Metadata about book names, short names (abbreviations) and verses in each chapter
+
+genesis: &gen
+  name:          Genesis
+  short_name:    Gen.
+  chapter_info:  [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 55, 32, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26]
+gen:  *gen
+gn:   *gen
+ge:   *gen  
+exodus: &ex
+  name:          Exodus
+  short_name:    Ex.
+  chapter_info:  [22, 25, 22, 31, 23, 30, 25, 32, 35, 29, 10, 51, 22, 31, 27, 36, 16, 27, 25, 26, 36, 31, 33, 18, 40, 37, 21, 43, 46, 38, 18, 35, 23, 35, 35, 38, 29, 31, 43, 38]
+exo:  *ex
+ex:   *ex
+exod: *ex
+leviticus: &lev
+  name:          Leviticus
+  short_name:    Lev.
+  chapter_info:  [17, 16, 17, 35, 19, 30, 38, 36, 24, 20, 47, 8, 59, 57, 33, 34, 16, 30, 37, 27, 24, 33, 44, 23, 55, 46, 34]
+lev:  *lev
+lv:   *lev
+numbers: &num
+  name:          Numbers
+  short_name:    Num.
+  chapter_info:  [54, 34, 51, 49, 31, 27, 89, 26, 23, 36, 35, 16, 33, 45, 41, 50, 13, 32, 22, 29, 35, 41, 30, 25, 18, 65, 23, 31, 40, 16, 54, 42, 56, 29, 34, 13]
+num:  *num
+nm:   *num
+nu:   *num
+deuteronomy: &deut
+  name:          Deuteronomy
+  short_name:    Deut.
+  chapter_info:  [46, 37, 29, 49, 33, 25, 26, 20, 29, 22, 32, 32, 18, 29, 23, 22, 20, 22, 21, 20, 23, 30, 25, 22, 19, 19, 26, 68, 29, 20, 30, 52, 29, 12]
+deut:   *deut
+dt:     *deut
+deu:    *deut
+joshua: &josh
+  name:          Joshua
+  short_name:    Josh.
+  chapter_info:  [18, 24, 17, 24, 15, 27, 26, 35, 27, 43, 23, 24, 33, 15, 63, 10, 18, 28, 51, 9, 45, 34, 16, 33]
+jos:  *josh
+josh: *josh
+judges: &judg
+  name:          Judges
+  short_name:    Judg.
+  chapter_info:  [36, 23, 31, 24, 31, 40, 25, 35, 57, 18, 40, 15, 25, 20, 20, 31, 13, 31, 30, 48, 25]
+judg:   *judg
+jdg:    *judg
+ruth: &ruth
+  name:          Ruth
+  short_name:    Ruth
+  chapter_info:  [22, 23, 18, 22]
+ru:   *ruth
+rt:   *ruth
+rut:  *ruth
+rth:  *ruth
+1samuel: &1sam
+  name:          1 Samuel
+  short_name:    1 Sam.
+  chapter_info:  [28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 35, 23, 58, 30, 24, 42, 15, 23, 29, 22, 44, 25, 12, 25, 11, 31, 13]
+1sam:   *1sam
+1sa:    *1sam
+1s:     *1sam
+1sm:    *1sam
+2samuel: &2sam
+  name:          2 Samuel
+  short_name:    2 Sam.
+  chapter_info:  [27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33, 43, 26, 22, 51, 39, 25]
+2sam:   *2sam
+2sa:    *2sam
+2s:     *2sam
+2sm:    *2sam
+1kings: &1kgs
+  name:          1 Kings
+  short_name:    1 Kgs.
+  chapter_info:  [53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46, 21, 43, 29, 53]
+1ki:    *1kgs
+1kgs:   *1kgs
+2kings: &2kgs
+  name:          2 Kings
+  short_name:    2 Kgs.
+  chapter_info:  [18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37, 37, 21, 26, 20, 37, 20, 30]
+2ki:    *2kgs
+2kgs:   *2kgs
+1chronicles: &1chron
+  name:          1 Chronicles
+  short_name:    1 Chron.
+  chapter_info:  [54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 29, 43, 27, 17, 19, 8, 30, 19, 32, 31, 31, 32, 34, 21, 30]
+1chr:   *1chron
+1ch:    *1chron
+1chron: *1chron
+2chronicles: &2chron
+  name:          2 Chronicles
+  short_name:    2 Chron.
+  chapter_info:  [17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34, 11, 37, 20, 12, 21, 27, 28, 23, 9, 27, 36, 27, 21, 33, 25, 33, 27, 23]
+2chr:   *2chron
+2ch:    *2chron
+2chron: *2chron
+ezra: &ezra
+  name:          Ezra
+  short_name:    Ezra
+  chapter_info:  [11, 70, 13, 24, 17, 22, 28, 36, 15, 44]
+ezr:    *ezra
+esr:    *ezra
+1ezr:   *ezra
+nehemiah: &neh
+  name:          Nehemiah
+  short_name:    Neh.
+  chapter_info:  [11, 20, 32, 23, 19, 19, 73, 18, 38, 39, 36, 47, 31]
+neh:    *neh
+ne:     *neh
+2ezr:   *neh
+esther: &esth
+  name:          Esther
+  short_name:    Esth.
+  chapter_info:  [22, 23, 15, 17, 14, 14, 10, 17, 32, 3]
+est:    *esth
+esth:   *esth
+job: &job
+  name:          Job
+  short_name:    Job
+  chapter_info:  [22, 13, 26, 21, 27, 30, 21, 22, 35, 22, 20, 25, 28, 22, 35, 22, 16, 21, 29, 29, 34, 30, 17, 25, 6, 14, 23, 28, 25, 31, 40, 22, 33, 37, 16, 33, 24, 41, 30, 24, 34, 17]
+jb: *job
+psalms: &ps
+  name:          Psalms
+  short_name:    Ps.
+  chapter_info:  [6, 12, 8, 8, 12, 10, 17, 9, 20, 18, 7, 8, 6, 7, 5, 11, 15, 50, 14, 9, 13, 31, 6, 10, 22, 12, 14, 9, 11, 12, 24, 11, 22, 22, 28, 12, 40, 22, 13, 17, 13, 11, 5, 26, 17, 11, 9, 14, 20, 23, 19, 9, 6, 7, 23, 13, 11, 11, 17, 12, 8, 12, 11, 10, 13, 20, 7, 35, 36, 5, 24, 20, 28, 23, 10, 12, 20, 72, 13, 19, 16, 8, 18, 12, 13, 17, 7, 18, 52, 17, 16, 15, 5, 23, 11, 13, 12, 9, 9, 5, 8, 28, 22, 35, 45, 48, 43, 13, 31, 7, 10, 10, 9, 8, 18, 19, 2, 29, 176, 7, 8, 9, 4, 8, 5, 6, 5, 6, 8, 8, 3, 18, 3, 3, 21, 26, 9, 8, 24, 13, 10, 7, 12, 15, 21, 10, 20, 14, 9, 6]
+psa:    *ps
+ps:     *ps
+psalm:  *ps
+proverbs: &prov
+  name:          Proverbs
+  short_name:    Prov.
+  chapter_info:  [33, 22, 35, 27, 23, 35, 27, 36, 18, 32, 31, 28, 25, 35, 33, 33, 28, 24, 29, 30, 31, 29, 35, 34, 28, 28, 27, 28, 27, 33, 31]
+pro:    *prov
+pr:     *prov
+prov:   *prov
+prv:    *prov
+ecclesiastes: &eccles
+  name:          Ecclesiastes
+  short_name:    Eccles.
+  chapter_info:  [18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14]
+ecc:    *ecc
+ec:     *ec
+eccl:   *eccl
+songofsolomon: &song
+  name:          Song of Solomon
+  short_name:    Song.
+  chapter_info:  [17, 17, 11, 16, 16, 13, 13, 14]
+sng:        *song   
+song:       *song
+canticles:  *song
+cant:       *song
+isaiah: &isa
+  name:          Isaiah
+  short_name:    Isa.
+  chapter_info:  [31, 22, 26, 6, 30, 13, 25, 22, 21, 34, 16, 6, 22, 32, 9, 14, 14, 7, 25, 6, 17, 25, 18, 23, 12, 21, 13, 29, 24, 33, 9, 20, 24, 17, 10, 22, 38, 22, 8, 31, 29, 25, 28, 28, 25, 13, 15, 22, 26, 11, 23, 15, 12, 17, 13, 12, 21, 14, 21, 22, 11, 12, 19, 12, 25, 24]
+isa:    *isa
+is:     *isa
+jeremiah: &jer
+  name:          Jeremiah
+  short_name:    Jer.
+  chapter_info:  [19, 37, 25, 31, 31, 30, 34, 22, 26, 25, 23, 17, 27, 22, 21, 21, 27, 23, 15, 18, 14, 30, 40, 10, 38, 24, 22, 17, 32, 24, 40, 44, 26, 22, 19, 32, 21, 28, 18, 16, 18, 22, 13, 30, 5, 28, 7, 47, 39, 46, 64, 34]
+jer:    *jer
+jr:     *jer
+lamentations: &lam
+  name:          Lamentations
+  short_name:    Lam.
+  chapter_info:  [22, 22, 66, 22, 22]
+lam:    *lam
+la:     *lam
+lm:     *lam
+ezekiel: &ezek
+  name:          Ezekiel
+  short_name:    Ezek.
+  chapter_info:  [28, 10, 27, 17, 17, 14, 27, 18, 11, 22, 25, 28, 23, 23, 8, 63, 24, 32, 14, 49, 32, 31, 49, 27, 17, 21, 36, 26, 21, 26, 18, 32, 33, 31, 15, 38, 28, 23, 29, 49, 26, 20, 27, 31, 25, 24, 23, 35]
+ezk:    *ezek
+ez:     *ezek
+ezek:   *ezek
+eze:    *ezek
+daniel: &dan
+  name:          Daniel
+  short_name:    Dan.
+  chapter_info:  [21, 49, 30, 37, 31, 28, 28, 27, 27, 21, 45, 13]
+dan:    *dan
+da:     *dan
+dn:     *dan
+hosea: &hos
+  name:          Hosea
+  short_name:    Hos.
+  chapter_info:  [11, 23, 5, 19, 15, 11, 16, 14, 17, 15, 12, 14, 16, 9]
+hos:    *hos
+ho:     *hos
+joel: &joel
+  name:          Joel
+  short_name:    Joel
+  chapter_info:  [20, 32, 21]
+jol:    *joel
+jl:     *joel
+amos: &amos
+  name:          Amos
+  short_name:    Amos
+  chapter_info:  [15, 16, 15, 13, 27, 14, 17, 14, 15]
+amo:    *amos
+am:     *amos
+obadiah: &obad
+  name:          Obadiah
+  short_name:    Obad.
+  chapter_info:  [21]
+oba:    *obad
+ob:     *obad
+obad:   *obad
+obd:    *obad
+jonah: &jon
+  name:          Jonah
+  short_name:    Jon.er
+  chapter_info:  [17, 10, 10, 11]
+jon:    *jon
+jnh:    *jon
+micah: &micah
+  name:          Micah
+  short_name:    Micah
+  chapter_info:  [16, 13, 12, 13, 15, 16, 20]
+mic:    *micah
+mi:     *micah
+mch:    *micah
+nahum: &nah
+  name:          Nahum
+  short_name:    Nah.
+  chapter_info:  [15, 13, 19]
+nah:    *nah
+na:     *nah
+nam:    *nah
+habakkuk: &hab
+  name:          Habakkuk
+  short_name:    Hab.
+  chapter_info:  [17, 20, 19]
+hab:    *hab
+ha:     *hab
+zephaniah: &zeph
+  name:          Zephaniah
+  short_name:    Zeph.
+  chapter_info:  [18, 15, 20]
+zeph:   *zeph
+zec:    *zeph
+zch:    *zeph
+haggai: &haggai
+  name:          Haggai
+  short_name:    Haggai
+  chapter_info:  [15, 23]
+hag:    *haggai
+hagg:   *haggai
+zechariah: &zech
+  name:          Zechariah
+  short_name:    Zech.
+  chapter_info:  [21, 13, 10, 14, 11, 15, 14, 23, 17, 12, 17, 14, 9, 21]
+zech:   *zech
+zec:    *zech
+zch:    *zech
+malachi: &mal
+  name:          Malachi
+  short_name:    Mal.
+  chapter_info:  [14, 17, 18, 6]
+mal:    *mal
+ml:     *mal
+matthew: &matt
+  name:          Matthew
+  short_name:    Matt.
+  chapter_info:  [25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35, 30, 34, 46, 46, 39, 51, 46, 75, 66, 20]
+mt:     *matt
+mat:    *matt
+matt:   *matt
+mark: &mark
+  name:          Mark
+  short_name:    Mark
+  chapter_info:  [45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 20]
+mk:     *mark
+mr:     *mark
+mrk:    *mark
+luke: &luke
+  name:          Luke
+  short_name:    Luke
+  chapter_info:  [80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37, 43, 48, 47, 38, 71, 56, 53]
+lk:     *luke
+luk:   *luke
+l:      *luke
+lu:     *luke
+john: &john
+  name:          John
+  short_name:    John
+  chapter_info:  [51, 25, 36, 54, 47, 71, 53, 59, 41, 42, 57, 50, 38, 31, 27, 33, 26, 40, 42, 31, 25]
+jn:     *john
+jhn:    *john
+j:      *john
+joh:    *john
+acts: &acts
+  name:          Acts
+  short_name:    Acts
+  chapter_info:  [26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 41, 40, 34, 28, 41, 38, 40, 30, 35, 27, 27, 32, 44, 31]
+act:    *acts
+ac:     *acts
+romans: &rom
+  name:          Romans
+  short_name:    Rom.
+  chapter_info:  [32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 33, 27]
+rom:    *rom
+ro:     *rom
+r:      *rom
+rm:     *rom
+1corinthians: &1cor
+  name:          1 Corinthians
+  short_name:    1 Cor.
+  chapter_info:  [31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24]
+1cor:   *1cor
+1co:    *1cor
+1k:     *1cor
+2corinthians: &2cor
+  name:          2 Corinthians
+  short_name:    2 Cor.
+  chapter_info:  [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14]
+2cor:   *2cor
+2co:    *2cor
+2k:     *2cor
+galatians: &gal
+  name:          Galatians
+  short_name:    Gal.
+  chapter_info:  [24, 21, 29, 31, 26, 18]
+gal:    *gal
+ga:     *gal
+g:      *gal
+ephesians: &eph
+  name:          Ephesians
+  short_name:    Eph.
+  chapter_info:  [23, 22, 21, 32, 33, 24]
+eph:    *eph
+ep:     *eph
+e:      *eph
+philippians: &phil
+  name:          Philippians
+  short_name:    Phil.
+  chapter_info:  [30, 30, 21, 23]
+phil:   *phil
+php:    *phil
+ph:     *phil
+phili:  *phil
+colossians: &col
+  name:          Colossians
+  short_name:    Col.
+  chapter_info:  [29, 23, 25, 18]
+col:    *col
+1thessalonians: &1thess
+  name:          1 Thessalonians
+  short_name:    1 Thess.
+  chapter_info:  [10, 20, 13, 18, 28]
+1th:    *1thess
+1thess: *1thess
+1thes:  *1thess
+2thessalonians: &2thess
+  name:          2 Thessalonians
+  short_name:    2 Thess.
+  chapter_info:  [12, 17, 18]
+2th:    *2thess
+2thess: *2thess
+2thes:  *2thess
+1timothy: &1tim
+  name:          1 Timothy
+  short_name:    1 Tim.
+  chapter_info:  [20, 15, 16, 16, 25, 21]
+1tim:   *1tim
+1ti:    *1tim
+1t:     *1tim
+1tm:    *1tim
+2timothy: &2tim
+  name:          2 Timothy
+  short_name:    2 Tim.
+  chapter_info:  [18, 26, 17, 22]
+2tim:   *2tim
+2ti:    *2tim
+2t:     *2tim
+2tm:    *2tim
+titus: &titus
+  name:          Titus
+  short_name:    Titus
+  chapter_info:  [16, 15, 15]
+tit:    *titus
+tt:     *titus
+philemon: &philem
+  name:          Philemon
+  short_name:    Philem.
+  chapter_info:  [25]
+phm:    *philem
+phlm:   *philem
+philem: *philem
+phile:  *philem
+hebrews: &heb
+  name:          Hebrews
+  short_name:    Heb.
+  chapter_info:  [14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25]
+heb:    *heb
+hebr:   *heb
+h:      *heb
+hbr:    *heb
+james: &james
+  name:          James
+  short_name:    James
+  chapter_info:  [27, 26, 18, 17, 20]
+jas:    *james
+jam:    *james
+ja:     *james
+1peter: &1pet
+  name:          1 Peter
+  short_name:    1 Pet.
+  chapter_info:  [25, 25, 22, 19, 14]
+1pet:   *1pet
+1pt:    *1pet
+1p:     *1pet
+1pe:    *1pet
+2peter: &2pet
+  name:          2 Peter
+  short_name:    2 Pet.
+  chapter_info:  [21, 22, 18]
+2pet:   *2pet
+2pt:    *2pet
+2p:     *2pet
+2pe:    *2pet
+1john: &1john
+  name:          1 John
+  short_name:    1 John
+  chapter_info:  [10, 29, 24, 21, 21]
+1jn:    *1john
+1jo:    *1john
+1j:     *1john
+2john: &2john
+  name:          2 John
+  short_name:    2 John
+  chapter_info:  [13]
+2jn:    *2john
+2jo:    *2john
+2j:     *2john
+3john: &3john
+  name:          3 John
+  short_name:    3 John
+  chapter_info:  [14]
+3jn:    *3john
+3jo:    *3john
+3j:     *3john
+jude: &jude
+  name:          Jude
+  short_name:    Jude
+  chapter_info:  [25]
+jud:    *jude
+jd:     *jude
+revelation: &rev
+  name:          Revelation
+  short_name:    Rev.
+  chapter_info:  [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21]
+rev:    *rev
