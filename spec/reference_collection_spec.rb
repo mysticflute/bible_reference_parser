@@ -165,6 +165,7 @@ describe ReferenceCollection do
     it "should not return contain duplicate errors" do
       books = BookReference.parse_books "Genesis 51"
       books.clean
+      puts books.errors.inspect
       books.errors.length.should eql 1
     end    
   end

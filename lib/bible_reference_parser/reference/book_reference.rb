@@ -134,7 +134,8 @@ module BibleReferenceParser
                 
         books << BookReference.new(book_name, contents)     
       end
-     
+      
+      books.add_error "'#{passage}' does not contain any books" if books.empty?
       books
     end   
     

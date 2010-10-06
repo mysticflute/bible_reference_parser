@@ -93,6 +93,7 @@ describe BookReference do
       it "should correctly identify when there is only 1 book" do
         books = BookReference.parse_books("Genesis 1:1")
         books.length.should eql 1
+        books.errors.length.should eql 0
       end
 
       it "should correctly identify when there are 2 books" do
@@ -106,6 +107,11 @@ describe BookReference do
                    
         books = BookReference.parse_books(passage)
         books.length.should eql 10
+      end
+      
+      it "should contain an error if no books are specified" do
+        books = BookReference.parse_books("777")
+        books.errors.first.should eql "'777' does not contain any books"  
       end
 
       it "should parse names beginning with a number" do
