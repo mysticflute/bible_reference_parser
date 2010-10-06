@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bible_reference_parser}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan McWilliams"]
-  s.date = %q{2010-09-29}
+  s.date = %q{2010-10-06}
   s.description = %q{BibleReferenceParser can parse scriptures passages, such as 'Gen. 1:15-18, 21' to the individual books, chapters and verses in the passage. It also provides validation for invalid book names, chapters, and verses.}
   s.email = %q{nathan.mcwilliams@gmail.com}
   s.extra_rdoc_files = [
