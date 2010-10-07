@@ -152,10 +152,14 @@ module BibleReferenceParser
           range = verse_range.split "-"
           first = range.first.to_i
           last = range.last.to_i
-
-          # add each verse in the range
-          (first..last).each do |number|
-            verses << VerseReference.new(number, metadata, chapter_number)
+          
+          unless last < first
+            # add each verse in the range
+            (first..last).each do |number|
+              verses << VerseReference.new(number, metadata, chapter_number)
+            end
+          else
+            verses.add_error "'#{verse_range}' is an invalid range of verses"
           end
         else
           verses << VerseReference.new(single_verse, metadata, chapter_number)          

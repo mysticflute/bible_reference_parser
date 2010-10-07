@@ -57,6 +57,13 @@ describe VerseReference do
   describe "when parsing the verses in a string" do
    
     describe "the parse_verses method" do
+      it "should add an error if the last verse in a range is lower than the first" do
+        verses = VerseReference.parse_verses "2-1"
+        verses.errors(false).length.should eql 1
+        verses.errors(false).first.should eql "'2-1' is an invalid range of verses"
+        verses.should be_empty
+      end
+      
       it "should parse single verses" do
         verses = VerseReference.parse_verses "1, 2,3"
         verses.length.should eql 3
