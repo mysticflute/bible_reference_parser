@@ -6,7 +6,7 @@ genesis: &gen
   chapter_info:  [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 55, 32, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26]
 gen:  *gen
 gn:   *gen
-ge:   *gen  
+ge:   *gen
 exodus: &ex
   name:          Exodus
   short_name:    Ex.
@@ -140,9 +140,9 @@ ecclesiastes: &eccles
   name:          Ecclesiastes
   short_name:    Eccles.
   chapter_info:  [18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14]
-ecc:    *ecc
-ec:     *ec
-eccl:   *eccl
+ecc:    *eccles
+ec:     *eccles
+eccl:   *eccles
 songofsolomon: &song
   name:          Song of Solomon
   short_name:    Song.
