@@ -98,6 +98,9 @@ describe BookReference do
 
       it "should correctly identify when there are 2 books" do
         books = BookReference.parse_books("Genesis 1:1, Exodus 1:1")
+        books.length.should eql 2
+        
+        books = BookReference.parse_books("Genesis 1:1; Exodus 1:1")
         books.length.should eql 2    
       end
 
