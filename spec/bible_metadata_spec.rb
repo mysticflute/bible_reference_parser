@@ -7,6 +7,10 @@ describe BibleMetadata do
     @matthew = "Matthew"
   end
   
+  it "should have valid abbreviations" do
+    BibleMetadata.metadata.any? {|book| book[1].is_a?(Syck::BadAlias) }.should_not be_true
+  end
+  
   it "should find the correct book for an all lower-cased name" do
     info = BibleMetadata["matthew"]
     info.should_not be_nil
