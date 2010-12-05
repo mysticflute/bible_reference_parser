@@ -1,10 +1,11 @@
-source 'http://rubygems.org'
+source :rubygems
 
-## gems required for rake tasks
 group :development do
-  gem 'rake'
-  gem 'jeweler'
+  gem "rspec", ">= 2.2.0"
+  gem "jeweler"
 end
 
-## read requirements from gemspec
-gemspec
+group :test do
+  gem "rspec", ">= 2.2.0"
+  gem 'simplecov', '>= 0.3.7'
+end

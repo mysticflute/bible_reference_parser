@@ -15,9 +15,6 @@ begin
     gem.email       = "nathan.mcwilliams@gmail.com"
     gem.homepage    = "http://github.com/endium/bible_reference_parser"
     gem.authors     = ["Nathan McWilliams"]
-    
-    gem.add_development_dependency "rspec", "~> 2.0.0"
-    gem.add_development_dependency "simplecov", "~> 0.3.7"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError => ex
